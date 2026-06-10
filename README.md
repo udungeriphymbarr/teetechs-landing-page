@@ -3,7 +3,7 @@
 A modern and responsive landing page for a fictional web development academy called **TeeTechs**. Built using HTML, CSS, and JavaScript.
 
 ## 🌐 Live Preview
-http://teetechs-landing-page.com/
+https://udungeriphymbarr.github.io/teetechs-landing-page/
 
 ---
 
