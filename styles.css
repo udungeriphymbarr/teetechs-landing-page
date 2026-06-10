@@ -1,0 +1,239 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+html {
+    scroll-behavior: smooth;
+}
+body {
+    font-family: Arial, Helvetica, sans-serif;
+    color: white;
+}
+
+.hero {
+    height: 100vh;
+    background: linear-gradient(rgba(0,0,0,0.7), rgba(0,0,0,0.7)), url('./images/hero-abstract-tech.jpg');
+    background-size: cover;
+    background-position: center;
+
+    padding: 30px 80px;
+}
+
+.navbar {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.logo {
+    font-size: 25px;
+    font-weight: bold;
+    letter-spacing: 2px;
+}
+
+.logo-blue {
+    color: white;
+    background-color: dodgerblue;
+    padding: 2px;
+    border-radius: 4px 0 0 4px;
+}
+.logo-white {
+    background-color: orangered;
+    padding: 2px;
+    border-radius: 0 4px 4px 0;
+}
+
+.nav-links {
+    display: flex;
+    list-style: none;
+    gap: 30px;
+}
+
+.nav-links a {
+    text-decoration: none;
+    color: white;
+    font-size: 14px;
+}
+.nav-links a:hover {
+    color: dodgerblue;
+}
+
+.nav-buttons {
+    display: flex;
+    gap: 20px;
+}
+
+.login {
+    text-decoration: none;
+    color: white;
+}
+.signup {
+    text-decoration: none;
+    color: white;
+}
+.login:hover, .signup:hover {
+    text-decoration: underline;
+    color: dodgerblue;
+}
+
+.hero-content {
+    height: 80vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+
+    text-align: center;
+}
+
+.hero-content h1 {
+    font-size: 64px;
+    margin-bottom: 20px;
+}
+
+.hero-content p {
+    font-size: 18px;
+    margin-bottom: 30px;
+    color: white;
+}
+
+.hero-buttons {
+    display: flex;
+    gap: 20px;
+}
+
+.primary-btn, .secondary-btn {
+    background: transparent;
+    color: white;
+    border: 1px solid orangered;
+    padding: 15px 35px;
+    border-radius: 30px;
+    cursor: pointer;
+}
+
+.primary-btn:hover, .secondary-btn:hover {
+    background-color: orangered;
+    border: none;
+}
+
+#features {
+    display: grid;
+    grid-template-columns: auto auto auto;
+    justify-content: space-around;
+    align-items: center;
+    padding: 50px;
+    text-align: center;
+    height: 100vh;
+}
+
+.feature-box {
+    border-radius: 40px;
+    background-color: orangered;
+    color: white;
+    padding: 40px;
+    width: 400px;
+    margin-bottom: 5px;
+    transition: transform 0.2s ease-in-out;
+}
+.feature-box:hover {
+    transform: scale(0.9);
+}
+
+.feature-box h3 {
+    margin-bottom: 15px;
+}
+
+ #projects {
+    display: grid;
+    grid-template-columns: auto auto auto;
+    justify-content: space-around;
+    align-items: center;
+    padding: 50px;
+    text-align: center;
+    height: 100vh;
+    background-color: rgb(29, 62, 95);
+}
+
+.project-card {
+    border-radius: 10px;
+    border-left: 7px solid orangered;
+    color: white;
+    padding: 40px;
+    width: 400px;
+    margin-bottom: 5px;
+    cursor: pointer;
+    transition: transform 0.2s linear;
+}
+.project-card:hover {
+    transform: translateX(-2px);
+}
+
+@media (max-width: 800px) {
+.hero {
+    padding: 10px 30px;
+}
+.logo {
+    font-size: 15px;
+    font-weight: bold;
+    letter-spacing: 2px;
+}
+.nav-links {
+    display: flex;
+    list-style: none;
+    gap: 10px;
+}
+.nav-buttons {
+    display: flex;
+    gap: 7px;
+}
+.hero-content h1 {
+    font-size: 35px;
+    margin-bottom: 10px;
+}
+#features {
+    display: grid;
+    grid-template-columns: repeat(3, auto);
+    justify-content: center;
+    align-items: center;
+    gap: 10px;
+    height: 100vh;
+    padding: 50px;
+    text-align: center;
+    overflow: auto;
+    transition: transform 0.3s ease-in;
+}
+.feature-box {
+    width: 180px;
+    height: 180px;
+    padding: 20px 10px;
+    align-content: center;
+}
+.feature-box h1 {
+    font-size: 12px;
+}
+.feature-box p {
+    font-size: 12px;
+}
+.feature-box:hover {
+    transform: none;
+}
+#projects {
+    display: grid;
+    grid-template-columns: repeat(3, auto);
+    justify-content: center;
+    align-items: center;
+    gap: 10px;
+    height: 100vh;
+    padding: 50px;
+    text-align: center;
+    overflow: auto;
+}
+.project-card {
+    width: 180px;
+    height: 180px;
+    padding: 15px;
+    gap: 10px;
+    margin: 5px;
+}
+}
