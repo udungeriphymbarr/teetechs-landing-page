@@ -34,7 +34,7 @@ A modern and responsive landing page for a fictional web development academy cal
 ├── styles.css
 ├── script.js
 └── images/
-    └── 3D_Fantasy_Wolf.jpg
+    └── hero-abstract-tech.jpg
 ```
 
 ---
